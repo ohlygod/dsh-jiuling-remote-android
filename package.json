@@ -1,0 +1,41 @@
+{
+  "name": "dsh-jiuling-remote-android",
+  "version": "0.1.0",
+  "description": "DSH 远程目录（安卓端）：在手机上输 6 位配对码即可接入电脑端的 dsh-jiuling-remote-desktop，提供凭据落盘、RPC 桥接与 SSE 事件流透传（只传文本，不映射桌面）。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "dshapp-plugin",
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "remote",
+    "android",
+    "cloudflare-tunnel"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

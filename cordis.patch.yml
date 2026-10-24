@@ -1,0 +1,7 @@
+# dsh-jiuling-remote-android —— bundle 补丁。
+#
+# 只 insert 自己一行、不碰任何既有行：补丁是「整行替换 config」而不是合并，
+# 覆盖别人的行会造成难以排查的配置丢失。
+- insert:
+    - id: jiuling-remote-android
+      name: 'dsh-jiuling-remote-android'
