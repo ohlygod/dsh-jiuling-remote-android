@@ -4,6 +4,14 @@
   "description": "DSH 远程目录（安卓端）：在手机上输 6 位配对码即可接入电脑端的 dsh-jiuling-remote-desktop，提供凭据落盘、RPC 桥接与 SSE 事件流透传（只传文本，不映射桌面）。",
   "type": "module",
   "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohlygod/dsh-jiuling-remote-android.git"
+  },
+  "homepage": "https://github.com/ohlygod/dsh-jiuling-remote-android#readme",
+  "bugs": {
+    "url": "https://github.com/ohlygod/dsh-jiuling-remote-android/issues"
+  },
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
